@@ -2,6 +2,7 @@ version: "3.7"
 services:
 
   identidock:
+    container_name: "identidock"
     build: .
     expose:
       - "9090"
@@ -12,7 +13,9 @@ services:
       - "redis"
 
   dnmonster:
+    container_name: "dnmonster"
     image: amouat/dnmonster:1.0
 
   redis:
+    container_name: "redis"
     image: redis:3.0
