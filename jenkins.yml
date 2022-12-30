@@ -7,6 +7,9 @@ services:
       - "9090"
     environment:
       ENV: PROD
+    depends_on:
+      - "dnmonster"
+      - "redis"
     links:
       - "dnmonster"
       - "redis"
