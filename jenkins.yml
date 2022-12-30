@@ -7,14 +7,11 @@ services:
       - "9090"
     environment:
       ENV: PROD
-    depends_on:
-      - "dnmonster"
-      - "redis"
     links:
       - "dnmonster"
       - "redis"
 
-  dnmonester:
+  dnmonster:
     image: "amouat/dnmonester:1.0"
 
   redis:
