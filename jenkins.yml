@@ -12,7 +12,7 @@ services:
       - "redis"
 
   dnmonster:
-    image: "amouat/dnmonester:1.0"
+    image: amouat/dnmonster:1.0
 
   redis:
-    image: "redis:3.0"
+    image: redis:3.0
